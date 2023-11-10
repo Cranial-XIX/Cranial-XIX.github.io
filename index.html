@@ -1,335 +1,387 @@
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Bo Liu</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
 
-    <!-- Loading Bootstrap -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Loading Flat UI -->
-    <link href="css/flat-ui.css" rel="stylesheet">
+    <title>Bo Liu's Home Page</title>
+    <link rel="stylesheet" href="main.css">
+</head>
 
-    <!-- Loading custom UI -->
-    <link href="css/custom.css" rel="stylesheet">
+<body>
 
-  </head>
-  <body>
-    <div class="container">
-    <div class="row">
-      <div class="header">Bo Liu</div>
-      <div class="span10"></div>
-    </div>
-    <div class="row">
-      <div class="span12">
-        <div class="content">
-		  <img src="images/img/bo.jpeg" class="fright" width=60 height=60/>
-			<!--style="transform:rotate(90deg);"/>-->
-          <div class="desc-block">
-            <p>
-            I am a computer science PhD at the University of Texas at Austin. I am honored to be co-advised by
-			<a href="https://www.cs.utexas.edu/~pstone">Prof. Peter Stone</a> and <a href="http://www.cs.utexas.edu/~lqiang">Prof. Qiang Liu</a>. I have a broad interest in reinforcement learning, continual learning, imitation learning and their applications in robotics. Before coming to UT, I did my master at Stanford University, where I was fortunate to work with <a href="http://vision.stanford.edu/feifeili/">Prof. Fei-Fei Li</a> and <a href="https://www.cs.utexas.edu/~yukez/">Prof. Yuke Zhu</a> on planning under uncertainty, and <a href="https://cs.stanford.edu/people/jure/">Prof. Jure Leskovec</a> on massive data mining. I finished my undergraduate study at the Johns Hopkins University, where I was fortunate to work with <a href="http://www.cs.jhu.edu/~jason/">Prof. Jason Eisner</a> on generative syntactic parsing.</p>
-            </p>
-          </div>
+    <div class="page-content">
+        <div class="wrapper">
+            <div class="post">
 
-          <p>
-		    <strong>Email:</strong> bliu@cs.utexas.edu <strong>
-            <div class="resources">
-                <a href="https://github.com/Cranial-XIX">[GitHub]</a>
-                <a href="https://scholar.google.com/citations?hl=en&user=RlaKKWAAAAAJ">[Google Scholar]</a>
+                <header class="post-header">
+                    <h1 class="post-title"><strong>Bo Liu</strong></h1>
+                    <h5 class="post-description">Ph.D. Student, UT Austin</h5>
+                </header>
+
+                <div class="profile-intro">
+                <img src="images/img/lb.jpeg" class="profile-image" height="222"/>
+                <article class="post-content clearfix">
+                    <div class="content-container">
+                        <p class="content-paragraph">
+                        I am a Ph.D. student at UT Austin and I am very forunate to be co-advised by
+                        <a href="https://www.cs.utexas.edu/~pstone">Prof. Peter Stone</a> and <a href="http://www.cs.utexas.edu/~lqiang">Prof. Qiang Liu</a>. My research interest lies in multitask/continual learning, reinforcement learning, imitation learning and their applications in robotics. Specifically, I am interested in designing theoretically sound algorithms and neural architectures for training large-scale multi-purpose agents. Before joining UT Austin, I completed my master's at Stanford University and my undergraduate studies at Johns Hopkins University.
+                        </p>
+                    <p><strong>Contact:</strong> <a href="mailto:bliu@cs.utexas.edu">Email</a> / <a href="https://github.com/Cranial-XIX" target="_blank" rel="noopener noreferrer">Github</a> / <a href="https://scholar.google.com/citations?hl=en&user=RlaKKWAAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a> / <a href="https://twitter.com/cranialxix" target="_blank" rel="noopener noreferrer">Twitter</a></p>
+                    </div>
+                </article>
+                </div>
+                <div class="experience">
+                    <h2>Experience</h2>
+                    <table>
+                        <!-- Google DeepMind -->
+                        <td class="date">Jun - Oct 2023</td>
+                        <td class="entry">
+                            <span class="employer">Google DeepMind, London</span> –
+                            <span class="position">Research Intern</span><br>
+                            <span class="position" style="font-size: 14px;">Mentor: Arthur Szlam, Marc'aurelio Ranzato</span>
+                        </td>
+
+                        <!-- Nvidia -->
+                        <tr>
+                            <td class="date">Jun - Sept 2020</td>
+                            <td class="entry">
+                                <span class="employer">Nvidia, Sunnyvale</span> –
+                                <span class="position">Research Intern</span><br>
+                                <span class="position" style="font-size: 14px;">Mentor: Animashree Anandkumar, Yuke Zhu</span>
+                            </td>
+                        </tr>
+
+                        <!-- Baidu -->
+                        <tr>
+                            <td class="date">Jun - Sept 2018/2019</td>
+                            <td class="entry">
+                                <span class="employer">Baidu, Sunnyvale</span> –
+                                <span class="position">Research Intern</span><br>
+                                <span class="position" style="font-size: 14px;">Mentor: Ping Li</span>
+                            </td>
+                        </tr>
+
+                        <!-- Google -->
+                        <tr>
+                            <td class="date">May - Aug 2015/2016</td>
+                            <td class="entry">
+                                <span class="employer">Google, Los Angeles</span> –
+                                <span class="position">Software Engineer Intern</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="selected publications">
+
+                    <h2>Selected Publications</h2>
+
+                    <div class="paper">
+                        <div class="title">
+                            Lion Secretly Solves Constrained Optimization: As Lyapunov Predicts
+                        </div>
+                        <div class="authors">
+                            *Lizhang Chen, <strong>*Bo Liu</strong>, *Kaizhao Liang, Qiang Liu
+                        </div>
+<!--                         <div class="publisher">
+                            Submitted for publication
+                        </div> -->
+                        <div class="resource">
+                            <a href="https://arxiv.org/abs/2310.05898.pdf">[paper]</a>
+                        </div>
+                    </div>
+
+
+                    <!-- LLM+P: Empowering Large Language Models with Optimal Planning Proficiency -->
+                    <div class="paper">
+                        <div class="title">
+                            LLM+P: Empowering Large Language Models with Optimal Planning Proficiency
+                        </div>
+                        <div class="authors">
+                            <strong>*Bo Liu</strong>, *Yuqian Jiang, Xiaohan Zhang, Qiang Liu, Shiqi Zhang, Joydeep Biswas, Peter Stone
+                        </div>
+<!--                         <div class="publisher">
+                            Publication Details or Venue
+                        </div> -->
+                        <div class="resource">
+                            <a href="https://arxiv.org/abs/2304.11477.pdf">[paper]</a>
+                            <a href="https://github.com/Cranial-XIX/llm-pddl.git">[code]</a>
+                        </div>
+                    </div>
+
+                    <!-- LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning -->
+                    <div class="paper">
+                        <div class="title">
+                            LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning
+                        </div>
+                        <div class="authors">
+                            <strong>*Bo Liu</strong>, *Yifeng Zhu, *Chongkai Gao, Yihao Feng, Qiang Liu, Yuke Zhu, Peter Stone
+                        </div>
+                        <div class="publisher">
+                            NeurIPS 2023
+                        </div>
+                        <div class="resource">
+                            <a href="https://arxiv.org/abs/2306.03310.pdf">[paper]</a>
+                            <a href="https://github.com/Lifelong-Robot-Learning/LIBERO.git">[code]</a>
+                            <a href="https://libero-project.github.io">[website]</a>
+                        </div>
+                    </div>
+
+                    <!-- FAMO: Fast Adaptive Multitask Optimization -->
+                    <div class="paper">
+                        <div class="title">
+                            FAMO: Fast Adaptive Multitask Optimization
+                        </div>
+                        <div class="authors">
+                            <strong>Bo Liu</strong>, Yihao Feng, Peter Stone, Qiang Liu
+                        </div>
+                        <div class="publisher">
+                            NeurIPS 2023
+                        </div>
+                        <div class="resource">
+                            <a href="https://arxiv.org/abs/2306.03792.pdf">[paper]</a>
+                            <a href="https://github.com/Cranial-XIX/FAMO.git">[code]</a>
+                        </div>
+                    </div>
+
+                    <!-- Metric Residual Networks for Sample Efficient Goal-Conditioned Reinforcement Learning -->
+                    <div class="paper">
+                        <div class="title">
+                            Metric Residual Networks for Sample Efficient Goal-Conditioned Reinforcement Learning
+                        </div>
+                        <div class="authors">
+                            <strong>Bo Liu</strong>, Yihao Feng, Qiang Liu, Peter Stone
+                        </div>
+                        <div class="publisher">
+                            AAAI 2023 (oral presentation)
+                        </div>
+                        <div class="resource">
+                            <a href="https://arxiv.org/pdf/2208.08133.pdf">[paper]</a>
+                            <a href="https://github.com/Cranial-XIX/metric-residual-network">[code]</a>
+                        </div>
+                    </div>
+
+                    <!-- BOME! Bilevel Optimization Made Easy: A Simple First-Order Approach -->
+                    <div class="paper">
+                        <div class="title">
+                            BOME! Bilevel Optimization Made Easy: A Simple First-Order Approach
+                        </div>
+                        <div class="authors">
+                            <strong>*Bo Liu</strong>, *Mao Ye, Peter Stone, Steve Wright, Qiang Liu
+                        </div>
+                        <div class="publisher">
+                            NeurIPS 2022
+                        </div>
+                        <div class="resource">
+                            <a href="https://arxiv.org/pdf/2209.08709.pdf">[paper]</a>
+                            <a href="https://github.com/Cranial-XIX/BOME">[code]</a>
+                        </div>
+                    </div>
+
+                    <!-- Continual Learning and Private Unlearning -->
+                    <div class="paper">
+                        <div class="title">
+                            Continual Learning and Private Unlearning
+                        </div>
+                        <div class="authors">
+                            <strong>Bo Liu</strong>, Qiang Liu, Peter Stone
+                        </div>
+                        <div class="publisher">
+                            CoLLAs 2022
+                        </div>
+                        <div class="resource">
+                            <a href="https://arxiv.org/pdf/2203.12817.pdf">[paper]</a>
+                            <a href="https://github.com/Cranial-XIX/Continual-Learning-Private-Unlearning">[code]</a>
+                        </div>
+                    </div>
+
+                    <!-- Conflict-Averse Gradient Descent for Multi-task Learning -->
+                    <div class="paper">
+                        <div class="title">
+                            Conflict-Averse Gradient Descent for Multi-task Learning
+                        </div>
+                        <div class="authors">
+                            <strong>Bo Liu</strong>, Xingchao Liu, Xiaojie Jin, Peter Stone, Qiang Liu
+                        </div>
+                        <div class="publisher">
+                            NeurIPS 2021
+                        </div>
+                        <div class="resource">
+                            <a href="https://arxiv.org/pdf/2110.14048.pdf">[paper]</a>
+                            <a href="https://github.com/Cranial-XIX/CAGrad">[code]</a>
+                        </div>
+                    </div>
+
+                    <!-- Human versus Machine Attention in Deep Reinforcement Learning Tasks -->
+                    <div class="paper">
+                        <div class="title">
+                            Human versus Machine Attention in Deep Reinforcement Learning Tasks
+                        </div>
+                        <div class="authors">
+                            Sihang Guo, Ruohan Zhang, <strong>Bo Liu</strong>, Yifeng Zhu, Mary Hayhoe, Dana Ballard, Peter Stone
+                        </div>
+                        <div class="publisher">
+                            NeurIPS 2021
+                        </div>
+                        <div class="resource">
+                            <a href="https://arxiv.org/pdf/2010.15942.pdf">[paper]</a>
+                        </div>
+                    </div>
+
+                    <!-- Coach-Player Multi-Agent Reinforcement Learning for Dynamic Team Composition -->
+                    <div class="paper">
+                        <div class="title">
+                            Coach-Player Multi-Agent Reinforcement Learning for Dynamic Team Composition
+                        </div>
+                        <div class="authors">
+                            <strong>Bo Liu</strong>, Qiang Liu, Peter Stone, Animesh Garg, Yuke Zhu, Animashree Anandkumar
+                        </div>
+                        <div class="publisher">
+                            ICML 2021 (oral presentation)
+                        </div>
+                        <div class="resource">
+                            <a href="https://arxiv.org/pdf/2105.08692.pdf">[paper]</a>
+                            <a href="https://github.com/Cranial-XIX/marl-copa">[code]</a>
+                        </div>
+                    </div>
+
+                    <!-- A lifelong learning approach to mobile robot navigation -->
+                    <div class="paper">
+                        <div class="title">
+                            A lifelong learning approach to mobile robot navigation
+                        </div>
+                        <div class="authors">
+                            <strong>Bo Liu*</strong>, Xuesu Xiao*, Peter Stone
+                        </div>
+                        <div class="publisher">
+                            RA-L / ICRA 2021
+                        </div>
+                        <div class="resource">
+                            <a href="https://arxiv.org/pdf/2007.14486.pdf">[paper]</a>
+                            <a href="https://github.com/Cranial-XIX/LifelongLearningforNavigation">[code]</a>
+                        </div>
+                    </div>
+
+                    <!-- Firefly neural architecture descent: a general approach for growing neural networks -->
+                    <div class="paper">
+                        <div class="title">
+                            Firefly neural architecture descent: a general approach for growing neural networks
+                        </div>
+                        <div class="authors">
+                            Lemeng Wu*, <strong>Bo Liu*</strong>, Peter Stone, Qiang Liu
+                        </div>
+                        <div class="publisher">
+                            NeurIPS 2020
+                        </div>
+                        <div class="resource">
+                            <a href="https://arxiv.org/pdf/2102.08574.pdf">[paper]</a>
+                            <a href="https://github.com/klightz/Firefly">[code]</a>
+                        </div>
+                    </div>
+
+                    <!-- APPLD: Adaptive Planner Parameter Learning from Demonstration -->
+                    <div class="paper">
+                        <div class="title">
+                            APPLD: Adaptive Planner Parameter Learning from Demonstration
+                        </div>
+                        <div class="authors">
+                            Xuesu Xiao*, <strong>Bo Liu*</strong>, Garrett Warnell, Jonathan Fink, Peter Stone
+                        </div>
+                        <div class="publisher">
+                            RA-L / IROS 2020
+                        </div>
+                        <div class="resource">
+                            <a href="https://arxiv.org/abs/2004.00116">[paper]</a>
+                        </div>
+                    </div>
+
+                    <!-- DualSMC: Tunneling Differentiable Filtering and Planning under Continuous POMDPs -->
+                    <div class="paper">
+                        <div class="title">
+                            DualSMC: Tunneling Differentiable Filtering and Planning under Continuous POMDPs
+                        </div>
+                        <div class="authors">
+                            Yunbo Wang*, <strong>Bo Liu*</strong>, Jiajun Wu, Yuke Zhu, Simon S. Du, Li Fei-Fei, Joshua B. Tenenbaum
+                        </div>
+                        <div class="publisher">
+                            IJCAI 2020
+                        </div>
+                        <div class="resource">
+                            <a href="https://arxiv.org/abs/1909.13003">[paper]</a>
+                            <a href="https://github.com/Cranial-XIX/DualSMC">[code]</a>
+                        </div>
+                    </div>
+
+                    <!-- Predicting pregnancy using large-scale data from a women’s health tracking mobile application -->
+                    <div class="paper">
+                        <div class="title">
+                            Predicting pregnancy using large-scale data from a women’s health tracking mobile application
+                        </div>
+                        <div class="authors">
+                            <strong>Bo Liu*</strong>, Shuyang Shi*, Yongshang Wu*, Daniel Thomas, Laura Symul, Emma Pierson, Jure Leskovec
+                        </div>
+                        <div class="publisher">
+                            WWW 2019
+                        </div>
+                        <div class="resource">
+                            <a href="https://arxiv.org/abs/1812.02222">[paper]</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="experience">
+                    <h2>Teaching</h2>
+                    <table>
+                        <!-- University of Texas at Austin -->
+                        <tr>
+                            <td class="date">Fall 2019</td>
+                            <td class="entry">
+                                <span class="employer">University of Texas at Austin</span> –
+                                <span class="position">Teaching Assistant</span></br>
+                                <span class="position">CS 394: Reinforcement Learning</span>
+                            </td>
+                        </tr>
+
+                        <!-- Stanford University -->
+                        <tr>
+                            <td class="date">Winter 2019</td>
+                            <td class="entry">
+                                <span class="employer">Stanford University</span> –
+                                <span class="position">Teaching Assistant</span></br>
+                                <span class="position">CS 234: Reinforcement Learning</span>
+                            </td>
+                        </tr>
+
+                        <!-- Johns Hopkins University -->
+                        <tr>
+                            <td class="date">Fall 2016</td>
+                            <td class="entry">
+                                <span class="employer">Johns Hopkins University</span> –
+                                <span class="position">Teaching Assistant</span></br>
+                                <span class="position">EN 601.665: Natural Language Processing</span></br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="date">Fall 2015</td>
+                            <td class="entry">
+                                <span class="employer">Johns Hopkins University</span> –
+                                <span class="position">Teaching Assistant</span></br>
+                                <span class="position">EN 600.463: Algorithms</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
             </div>
-          </p>
- 
-          <hr />
-
-          <h3>Selected Publications</h3>
-          <div class="list-pub-img">
-            <ul>
-              <li>
-                <div class="publication">
-                  <div class="title" style="font-size:1.05em;">Lion Secretly Solves Constrained Optimization: As Lyapunov Predicts</div>
-                  <div class="authors">*Lizhang Chen, <b>*Bo Liu</b>, *Kaizhao Liang, Qiang Liu</div>
-                  <strong>
-                  <div class="resources">
-                     <a href="https://arxiv.org/abs/2310.05898.pdf">[paper]</a>
-                  </div>
-                  </strong>
-                </div>
-              </li>
-
-              <li>
-                <div class="publication">
-                  <div class="title" style="font-size:1.05em;">LLM+P: Empowering Large Language Models with Optimal Planning Proficiency</div>
-                  <div class="authors"><b>*Bo Liu</b>, *Yuqian Jiang, Xiaohan Zhang, Qiang Liu, Shiqi Zhang, Joydeep Biswas, Peter Stone</div>
-                  <strong>
-                  <div class="resources">
-                     <a href="https://arxiv.org/abs/2304.11477.pdf">[paper]</a>
-                     <a href="https://github.com/Cranial-XIX/llm-pddl.git">[code]</a>
-                  </div>
-                  </strong>
-                </div>
-              </li>
-
-              <li>
-                <div class="publication">
-                  <div class="title" style="font-size:1.05em;">LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning
-</div>
-                  <div class="authors"><b>*Bo Liu</b>, *Yifeng Zhu, *Chongkai Gao, Yihao Feng, Qiang Liu, Yuke Zhu, Peter Stone</div>
-                  <div class="venue">NeurIPS 2023</div>
-                  <strong>
-                  <div class="resources">
-                     <a href="https://arxiv.org/abs/2306.03310.pdf">[paper]</a>
-                     <a href="https://github.com/Lifelong-Robot-Learning/LIBERO.git">[code]</a>
-                     <a href="https://libero-project.github.io">[website]</a>
-                  </div>
-                  </strong>
-                </div>
-              </li>
-
-              <li>
-                <div class="publication">
-                  <div class="title" style="font-size:1.05em;">FAMO: Fast Adaptive Multitask Optimization
-</div>
-                  <div class="authors"><b>Bo Liu</b>, Yihao Feng, Peter Stone, Qiang Liu</div>
-                  <div class="venue">NeurIPS 2023</div>
-                  <strong>
-                  <div class="resources">
-                     <a href="https://arxiv.org/abs/2306.03792.pdf">[paper]</a>
-                     <a href="https://github.com/Cranial-XIX/FAMO.git">[code]</a>
-                  </div>
-                  </strong>
-                </div>
-              </li>
-
-              <li>
-                <div class="publication">
-                  <div class="title" style="font-size:1.05em;">Metric Residual Networks for Sample Efficient Goal-Conditioned Reinforcement Learning</div>
-                  <div class="authors"><b>Bo Liu</b>, Yihao Feng, Qiang Liu, Peter Stone</div>
-                  <!--<div class="venue">under review of AAAI 2023</div>-->
-                  <div class="venue">AAAI 2023 (oral presentation)</div>
-                  <strong>
-                  <div class="resources">
-                     <a href="https://arxiv.org/pdf/2208.08133.pdf">[paper]</a>
-                     <a href="https://github.com/Cranial-XIX/metric-residual-network">[code]</a>
-                  </div>
-                  </strong>
-                </div>
-              </li>
-
-              <li>
-                <div class="publication">
-                  <div class="title" style="font-size:1.05em;">BOME! Bilevel Optimization Made Easy: A Simple First-Order Approach
-
-</div>
-                  <div class="authors"><b>Bo Liu*</b>, Mao Ye*, Peter Stone, Steve Wright, Qiang Liu</div>
-                  <div class="venue">NeurIPS 2022</div>
-                  <strong>
-                  <div class="resources">
-                     <a href="https://arxiv.org/pdf/2209.08709.pdf">[paper]</a>
-                     <a href="https://github.com/Cranial-XIX/BOME">[code]</a>
-                  </div>
-                  </strong>
-                </div>
-              </li>
-
-              <li>
-                <div class="publication">
-                  <div class="title" style="font-size:1.05em;">Continual Learning and Private Unlearning
-                  </div>
-                  <div class="authors"><b>Bo Liu</b>, Qiang Liu, Peter Stone</div>
-                  <div class="venue">CoLLAs 2022</div>
-                  <strong>
-                  <div class="resources">
-                     <a href="https://arxiv.org/pdf/2203.12817.pdf">[paper]</a>
-                     <a href="https://github.com/Cranial-XIX/Continual-Learning-Private-Unlearning">[code]</a>
-                  </div>
-                  </strong>
-                </div>
-              </li>
-
-              <div></div>
-
-              <li>
-                <div class="publication">
-                  <div class="title" style="font-size:1.05em;">Conflict-Averse Gradient Descent for Multi-task Learning
-
-</div>
-                  <div class="authors"><b>Bo Liu</b>, Xingchao Liu, Xiaojie Jin, Peter Stone, Qiang Liu</div>
-                  <div class="venue">NeurIPS 2021</div>
-                  <strong>
-                  <div class="resources">
-                    <a href="https://arxiv.org/pdf/2110.14048.pdf">[paper]</a>
-                    <a href="https://github.com/Cranial-XIX/CAGrad">[code]</a>
-                  </div>
-                  </strong>
-                </div>
-              </li>
-
-              <li>
-                <div class="publication">
-                  <div class="title" style="font-size:1.05em;">Human versus Machine Attention in Deep Reinforcement Learning Tasks</div>
-                  <div class="authors">Sihang Guo, Ruohan Zhang, <b>Bo Liu</b>, Yifeng Zhu, Mary Hayhoe, Dana Ballard, Peter Stone</div>
-                  <div class="venue">NeurIPS 2021</div>
-                  <strong>
-                  <div class="resources">
-                    <a href="https://arxiv.org/pdf/2010.15942.pdf">[paper]</a>
-                  </div>
-                  </strong>
-                </div>
-              </li>
-
-              <li>
-                <div class="publication">
-                  <div class="title" style="font-size:1.05em;">Coach-Player Multi-Agent Reinforcement Learning for Dynamic Team Composition
-</div>
-                  <div class="authors"><b>Bo Liu</b>, Qiang Liu, Peter Stone, Animesh Garg, Yuke Zhu, Animashree Anandkumar</div>
-                  <div class="venue">ICML 2021 (oral presentation)</div>
-                  <strong>
-                  <div class="resources">
-                    <a href="https://arxiv.org/pdf/2105.08692.pdf">[paper]</a>
-                    <a href="https://github.com/Cranial-XIX/marl-copa">[code]</a>
-                  </div>
-                  </strong>
-                </div>
-              </li>
-
-              <li>
-                <div class="publication">
-                  <div class="title" style="font-size:1.05em;">A lifelong learning approach to mobile robot navigation
-</div>
-                  <div class="authors"><b>Bo Liu*</b>, Xuesu Xiao*, Peter Stone</div>
-                  <div class="venue">RA-L / ICRA 2021</div>
-                  <strong>
-                  <div class="resources">
-                    <a href="https://arxiv.org/pdf/2007.14486.pdf">[paper]</a>
-                    <a href="https://github.com/Cranial-XIX/LifelongLearningforNavigation">[code]</a>
-                  </div>
-                  </strong>
-                </div>
-              </li>
-
-              <li>
-                <div class="publication">
-                  <div class="title" style="font-size:1.05em;">Firefly neural architecture descent: a general approach for growing neural networks</div>
-                  <div class="authors">Lemeng Wu*, <b>Bo Liu*</b>, Peter Stone, Qiang Liu</div>
-                  <div class="venue">NeurIPS 2020</div>
-                  <strong>
-                  <div class="resources">
-                    <a href="https://arxiv.org/pdf/2102.08574.pdf">[paper]</a>
-                    <a href="https://github.com/klightz/Firefly">[code]</a>
-                  </div>
-                  </strong>
-                </div>
-              </li>
-
-              <li>
-                <div class="publication">
-                  <div class="title" style="font-size:1.05em;">APPLD: Adaptive Planner Parameter Learning from Demonstration
-</div>
-                  <div class="authors">Xuesu Xiao*, <b>Bo Liu*</b>, Garrett Warnell, Jonathan Fink, Peter Stone</div>
-                  <div class="venue">RA-L / IROS 2020</div>
-                  <strong>
-                  <div class="resources">
-                    <a href="https://arxiv.org/abs/2004.00116">[paper]</a>
-                  </div>
-                  </strong>
-                </div>
-              </li>
-
-              <li>
-                <div class="publication">
-                  <div class="title" style="font-size:1.05em;">DualSMC: Tunneling Differentiable Filtering and Planning under Continuous POMDPs</div>
-				  <div class="authors">Yunbo Wang*, <b>Bo Liu*</b>, Jiajun Wu, Yuke Zhu, Simon S. Du, Li Fei-Fei, Joshua B. Tenenbaum</div>
-                  <div class="venue">IJCAI 2020</div>
-                  <strong>
-                  <div class="resources">
-                    <a href="https://arxiv.org/abs/1909.13003">[paper]</a>
-                    <a href="https://github.com/Cranial-XIX/DualSMC">[code]</a>
-                  </div>
-                  </strong>
-                </div>
-              </li>
-
-              <li>
-                <div class="publication">
-                  <div class="title" style="font-size:1.05em;">Predicting pregnancy using large-scale data from a women’s health tracking mobile application</div>
-				  <div class="authors"><b>Bo Liu*</b>, Shuyang Shi*, Yongshang Wu*, Daniel Thomas, Laura Symul, Emma Pierson, Jure Leskovec</div>
-                  <strong>
-                  <div class="venue">WWW 2019</div>
-                  <div class="resources">
-                    <a href="https://arxiv.org/abs/1812.02222">[paper]</a>
-                  </div>
-                  </strong>
-                </div>
-              </li>
-          </div>
-          
-          <hr />
-          
-          <h3>Working Experience</h3>
-          <div class="list-3">
-            <ul>
-              <li>
-                <img src="images/img/deepmind.png" class="logo">
-                <h4>Research Intern</h4>
-                <h4><small>Jun - Oct 2023 | London, UK</small></h4>
-                <h5>Google DeepMind (mentored by Arthur Szlam and Marc'aurelio Ranzato)</h5> 
-              </li>
-              <li>
-                <img src="images/img/nvidia.png" class="logo">
-                <h4>Research Intern</h4>
-                <h4><small>Jun - Sept 2020 | Sunnyvale, CA, USA</small></h4>
-                <h5>Nvidia (mentored by Prof. Animashree Anandkumar and Yuke Zhu)</h5> 
-              </li>
-              <li>
-                <img src="images/img/baidu.png" class="logo">
-                <h4>Research Intern</h4>
-                <h4><small>Jun - Sept 2018/2019 | Sunnyvale, CA, USA</small></h4>
-                <h5>Baidu (mentored by Prof. Ping Li)</h5> 
-              </li>
-              <li>
-                <img src="images/img/google.png" class="logo"/>
-                <h4>Software Engineer & Engineer Practicum Intern</h4>
-                <h4><small>May - Aug 2015/2016 | Los Angeles, CA, USA</small></h4>
-                <h5>Google</h5> 
-              </li>
-            </ul>
-          </div>
-          <hr />
-
-          <h3>Teaching Experience</h3>
-          <div class="list-3">
-            <ul>
-              <li>
-                <img src="images/img/ut.png" class="logo"> 
-                <h4>Teaching Assistant</h4>
-                <h4><small>Fall 2019 | Austin, TX, USA</small></h4>
-                <h5>CS 394: Reinforcement Learning</h5> 
-              </li>
-              <li>
-                <img src="images/img/stanford.png" class="logo"> 
-                <h4>Teaching Assistant</h4>
-                <h4><small>Winter 2019 | Stanford, CA, USA</small></h4>
-                <h5>CS 234: Reinforcement Learning</h5> 
-              </li>
-              <li>
-                <img src="images/img/jhu.png" style="width:175px;height:auto"/>
-                <h4>Teaching Assistant</h4>
-                <h4><small>Fall 2016 | Baltimore, MD, USA</small></h4>
-                <h5>EN 601.465/665: Natural Language Processing</h5> 
-                <h4><small>Fall 2015 | Baltimore, MD, USA</small></h4>
-                <h5>EN 600.363/463: Algorithms I</h5> 
-              </li>
-            </ul>
-          </div>
-          
-          <hr />
-
         </div>
-      </div>
-      </div>
-  </body>
+    </div>
+
+<script defer src="BEACON_LINK" integrity="INTEGRITY_HASH" data-cf-beacon='{"rayId":"RAY_ID","r":1,"version":"VERSION","token":"TOKEN"}' crossorigin="anonymous"></script>
+</body>
+
 </html>
 
