@@ -831,8 +831,7 @@ footer {
   .publications .paper .title {
     font-weight: bold; }
   .publications .paper .publisher {
-    font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
     color:gray; }
   .publications .paper .authors {
     font-style: italic;
