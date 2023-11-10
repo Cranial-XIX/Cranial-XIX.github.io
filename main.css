@@ -832,11 +832,14 @@ footer {
     font-weight: bold; }
   .publications .paper .publisher {
     font-size: 14px;
+    font-weight: bold;
     color:gray; }
   .publications .paper .authors {
     font-style: italic;
     font-size: 14px;
     color: gray; }
+  .publications .paper .resource {
+    margin-top: -3px; }
 
 .experience {
   border-top: 1px solid #e8e8e8;
