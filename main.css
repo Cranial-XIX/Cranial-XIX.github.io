@@ -1309,6 +1309,8 @@ div.equation {
 
 .profile-image {
     float: left; /* This will float your image to the right */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Horizontal offset, vertical offset, blur radius, shadow color */
+    border-radius: 10px; /* Adjust for desired roundness */
     margin: 5px 20px 0px 5px; /* This will add space around your image */
 }
 
