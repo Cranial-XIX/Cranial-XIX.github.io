@@ -1,8 +1,6 @@
 @charset "UTF-8";
 /******************************************************************************/
 /******************************************************************************/
-/* Import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* portfolio tinkering */
 /*!
 
@@ -17,7 +15,7 @@
 /* Basscss Base Buttons */
 button,
 .button {
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
   font-size: inherit;
   font-weight: normal;
   text-decoration: none;
@@ -108,7 +106,7 @@ svg {
 
 /* Basscss Base Typography */
 body {
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
   line-height: 1.5;
   font-size: 100%; }
 
@@ -118,7 +116,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em; }
@@ -902,7 +900,7 @@ footer {
 
 .pagination {
   font-size: 1rem;
-  font-family: 'Roboto', 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
   font-weight: 300;
   text-align: center; }
 
@@ -1304,14 +1302,36 @@ div.equation {
 }
 
 .profile-intro {
-    overflow: auto; /* To accommodate the floated image */
+    display: flex;
+    align-items: center;
 }
 
 .profile-image {
-    float: left; /* This will float your image to the right */
+    flex-shrink: 0;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Horizontal offset, vertical offset, blur radius, shadow color */
     border-radius: 10px; /* Adjust for desired roundness */
-    margin: 5px 20px 0px 5px; /* This will add space around your image */
+    margin: 0 20px 0 5px; /* This will add space around your image */
+}
+
+.profile-intro .post-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.profile-intro .content-container > :last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 40em) {
+    .profile-intro {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .profile-image {
+        align-self: center;
+        margin: 0 0 20px;
+    }
 }
 
 /* This is the CSS class for the container that holds the paragraph */
