@@ -823,9 +823,33 @@ footer {
   .publications h2 {
     font-weight: bold;
     margin-top: 0;
-    margin-bottom: 20px; }
+    margin-bottom: 16px; }
+  .publications .publication-note {
+    font-size: 10pt;
+    font-weight: 400;
+    vertical-align: middle; }
+  .publications .publication-category-title {
+    align-items: center;
+    color: #394b59;
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    gap: 12px;
+    letter-spacing: 0.01em;
+    margin: 28px 0 4px;
+    text-transform: none; }
+  .publications .publication-category-title:first-of-type {
+    margin-top: 0; }
+  .publications .publication-category-title::after {
+    background: #e8e8e8;
+    content: "";
+    flex: 1;
+    height: 1px; }
   .publications .paper {
-    margin-top: 10px; }
+    margin-top: 0;
+    padding: 10px 0 12px; }
+  .publications .paper + .paper {
+    border-top: 1px solid #f0f0f0; }
   .publications .paper .title {
     font-weight: bold; }
   .publications .paper .publisher {
@@ -838,6 +862,27 @@ footer {
     color: gray; }
   .publications .paper .resource {
     margin-top: -3px; }
+  .publications .paper-featured {
+    border-left: 2px solid #d9e5ec;
+    padding-left: 12px; }
+  .publications .paper-featured + .paper-featured {
+    border-top: 1px solid #f0f0f0; }
+  .publications .publication-label {
+    background: #f1f9fd;
+    border: 1px solid #9fcfe2;
+    border-radius: 999px;
+    color: #007dac;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    line-height: 1.45;
+    margin-left: 5px;
+    padding: 1px 7px;
+    vertical-align: 1px;
+    white-space: nowrap; }
 
 .experience {
   border-top: 1px solid #e8e8e8;
