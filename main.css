@@ -1367,6 +1367,14 @@ div.equation {
     margin-bottom: 0;
 }
 
+.alphaxiv-icon {
+    display: inline-block;
+    height: 0.9em;
+    margin-right: 1px;
+    vertical-align: -0.08em;
+    width: 0.9em;
+}
+
 @media screen and (max-width: 40em) {
     .profile-intro {
         flex-direction: column;
