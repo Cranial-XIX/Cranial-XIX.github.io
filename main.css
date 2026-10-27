@@ -25,7 +25,8 @@
   --gutter: 24px;
   --nav-h: 56px;
 
-  color-scheme: light;
+  /* "only" stops Chrome's auto dark mode from force-darkening the page */
+  color-scheme: only light;
 }
 
 :root[data-theme="dark"] {
