@@ -1,562 +1,577 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bo Liu - Recursive Superintelligence</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Bo Liu · Recursive Superintelligence</title>
+    <meta name="description" content="Bo Liu — Member of Technical Staff at Recursive Superintelligence, working on pretraining, architectures, optimization, reinforcement learning and continual learning.">
+    <meta name="author" content="Bo Liu">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bo Liu">
+    <meta property="og:description" content="Member of Technical Staff at Recursive Superintelligence. Pretraining, architectures, optimization, RL and continual learning.">
+    <meta property="og:image" content="https://cranial-xix.github.io/images/img/profile.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#131312" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d1c1a'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='600' text-anchor='middle' fill='%23fbfaf7'%3EBL%3C/text%3E%3C/svg%3E">
 
+    <script>
+        // apply a saved theme before first paint to avoid a flash
+        try {
+            var t = localStorage.getItem("theme");
+            if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
-<body>
+<body id="top">
 
-    <div class="page-content">
-        <div class="wrapper">
-            <div class="post">
-
-                <header class="post-header">
-                    <h1 class="post-title"><strong>Bo Liu</strong></h1>
-                    <h5 class="post-description">Be a scientist out of interest :)</h5>
-                </header>
-
-                <div class="profile-intro">
-                <img src="images/img/lb.jpeg" class="profile-image" height="223"/>
-                <article class="post-content clearfix">
-                    <div class="content-container">
-                        <p class="content-paragraph">
-                        I am a Member of Technical Staff at Recursive Superintelligence, working on pretraining and continual learning. My research interest lies in designing theoretically sound algorithms and neural architectures for agents with persistent memory and continual improvements. I received my Ph.D. from UT Austin, where I was fortunately co-advised by
-                        <a href="https://www.cs.utexas.edu/~pstone">Prof. Peter Stone</a> and <a href="http://www.cs.utexas.edu/~lqiang">Prof. Qiang Liu</a>.  Prior to that I completed my master degree at Stanford and my undergraduate degree at JHU.
-                        </p>
-						<p>
-						    <a href="mailto:bliu@cs.utexas.edu" style="text-decoration: none;"><i class="fas fa-envelope"></i> Email</a> /
-						    <a href="https://github.com/Cranial-XIX" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fab fa-github"></i> Github</a> /
-						    <a href="https://scholar.google.com/citations?hl=en&amp;user=RlaKKWAAAAAJ" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fas fa-graduation-cap"></i> Google Scholar</a> /
-							<a href="https://twitter.com/cranialxix" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fab fa-x-twitter"></i> X</a> /
-						    <a href="https://www.alphaxiv.org/@bo-liu" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><img src="https://www.alphaxiv.org/favicon.ico" class="alphaxiv-icon" alt=""> alphaXiv</a>
-						</p>
-                    </div>
-                </article>
-                </div>
-                <div class="experience">
-                    <h2>Experience</h2>
-                    <table>
-                        <!-- Recursive Superintelligence -->
-                        <tr>
-                            <td class="date">Aug 2026 - Present</td>
-                            <td class="entry">
-                                <span class="employer">Recursive Superintelligence</span> –
-                                <span class="position">Member of Technical Staff (RSI)</span><br>
-                                <span class="position" style="font-size: 14px;">Pretraining, Continual Learning</span>
-                            </td>
-                        </tr>
-                        <!-- Microsoft -->
-                        <tr>
-                            <td class="date">Nov 2025 - Aug 2026</td>
-                            <td class="entry">
-                                <span class="employer">Microsoft, Mountain View</span> –
-                                <span class="position">Member of Technical Staff (MSI)</span><br>
-                                <span class="position" style="font-size: 14px;">Continual Learning; Manager: Weizhu Chen</span>
-                            </td>
-                        </tr>
-                        <!-- Meta -->
-                        <tr>
-                            <td class="date">Nov 2024 - Nov 2025</td>
-                            <td class="entry">
-                                <span class="employer">Meta, Menlo Park</span> –
-                                <span class="position">Senior Research Scientist (MSL)</span><br>
-                                <span class="position" style="font-size: 14px;">Reasoning, Scaling RL; Manager: Yuandong Tian</span>
-                            </td>
-                        </tr>
-
-                        <!-- Google DeepMind -->
-                        <tr>
-                            <td class="date">Jun - Oct 2023</td>
-                            <td class="entry">
-                                <span class="employer">DeepMind, London</span> –
-                                <span class="position">Research Intern</span><br>
-                                <span class="position" style="font-size: 14px;">Mentor: Arthur Szlam, Marc'aurelio Ranzato</span>
-                            </td>
-                        </tr>
-
-                        <!-- Nvidia -->
-                        <tr>
-                            <td class="date">Jun - Sept 2020</td>
-                            <td class="entry">
-                                <span class="employer">Nvidia, Sunnyvale</span> –
-                                <span class="position">Research Intern</span><br>
-                                <span class="position" style="font-size: 14px;">Mentor: Animashree Anandkumar, Yuke Zhu</span>
-                            </td>
-                        </tr>
-
-                        <!-- Baidu -->
-                        <tr>
-                            <td class="date">Jun - Sept 2018/2019</td>
-                            <td class="entry">
-                                <span class="employer">Baidu, Sunnyvale</span> –
-                                <span class="position">Research Intern</span><br>
-                                <span class="position" style="font-size: 14px;">Mentor: Ping Li</span>
-                            </td>
-                        </tr>
-
-                        <!-- Google -->
-                        <tr>
-                            <td class="date">May - Aug 2015/2016</td>
-                            <td class="entry">
-                                <span class="employer">Google, Los Angeles</span> –
-                                <span class="position">Software Engineer Intern</span>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div class="selected publications">
-
-                    <h2>Selected Publications <span class="publication-note">(* ⇒ equal contribution)</span></h2>
-                    <h3 class="publication-category-title"><span>Foundation Models, Architectures &amp; Optimization</span></h3>
-                    <!-- Maglev: Sliding Recurrent Memory -->
-                    <div class="paper paper-featured">
-                        <div class="title">
-                            Maglev: Sliding Recurrent Memory
-                        </div>
-                        <div class="authors">
-                            <strong>Bo Liu</strong>, Qiang Liu
-                        </div>
-                        <div class="publisher">
-                            Preprint, 2026
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/abs/2608.02870" style="font-size: 14px">paper</a>
-                        </div>
-                    </div>
-
-                    <!-- GradLev: Token-Parallel Test-Time Training Via Costate Prediction -->
-                    <div class="paper paper-featured">
-                        <div class="title">
-                            GradLev: Token-Parallel Test-Time Training Via Costate Prediction
-                        </div>
-                        <div class="authors">
-                            <strong>Bo Liu</strong>, Qiang Liu
-                        </div>
-                        <div class="publisher">
-                            Preprint, 2026
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/pdf/2609.34174" style="font-size: 14px">paper</a>
-                        </div>
-                    </div>
-
-                    <div class="paper paper-featured">
-                        <div class="title">
-                            Longhorn: State Space Models Are Amortized Online Learners
-                        </div>
-                        <div class="authors">
-                            <strong>Bo Liu</strong>, Rui Wang, Lemeng Wu, Yihao Feng, Peter Stone, Qiang Liu
-                        </div>
-                        <div class="publisher">
-                            ICLR 2025; ENLSP @ NeurIPS 2024 <span class="publication-label">Workshop Oral</span>
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/abs/2407.14207.pdf" style="font-size: 14px">paper</a> / 
-                            <a href="https://github.com/Cranial-XIX/longhorn.git" style="font-size: 14px">code</a>
-                        </div>
-                    </div>
-
-                    <div class="paper">
-                        <div class="title">
-                            Cautious Optimizers: Improving Training with One Line of Code
-                        </div>
-                        <div class="authors">
-                            *Kaizhao Liang, *Lizhang Chen, <strong>Bo Liu</strong>, Qiang Liu
-                        </div>
-                        <div class="publisher">
-                            ICLR 2026
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/abs/2411.16085" style="font-size: 14px">paper</a> /
-                            <a href="https://github.com/kyleliang919/C-Optim" style="font-size: 14px">code</a>
-                        </div>
-                    </div>
-
-                    <div class="paper">
-                        <div class="title">
-                            Memory-Efficient LLM Training with Online Subspace Descent
-                        </div>
-                        <div class="authors">
-                            Kaizhao Liang, <strong>Bo Liu</strong>, Lizhang Chen, Qiang Liu
-                        </div>
-                        <div class="publisher">
-                            NeurIPS 2024
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/abs/2408.12857.pdf" style="font-size: 14px">paper</a> /
-                            <a href="https://github.com/kyleliang919/Online-Subspace-Descent.git" style="font-size: 14px">code</a>
-                        </div>
-                    </div>
-
-                    <div class="paper">
-                        <div class="title">
-                            Communication Efficient Distributed Training with Distributed Lion
-                        </div>
-                        <div class="authors">
-                            <strong>*Bo Liu</strong>, *Lemeng Wu, *Lizhang Chen, Kaizhao Liang, Jiaxu Zhu, Chen Liang, Raghuraman Krishnamoorthi, Qiang Liu
-                        </div>
-                        <div class="publisher">
-                            NeurIPS 2024
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/pdf/2404.00438.pdf" style="font-size: 14px">paper</a>
-                        </div>
-                    </div>
-
-                    <div class="paper">
-                        <div class="title">
-                            Lion Secretly Solves Constrained Optimization: As Lyapunov Predicts
-                        </div>
-                        <div class="authors">
-                            *Lizhang Chen, <strong>*Bo Liu</strong>, *Kaizhao Liang, Qiang Liu
-                        </div>
-                        <div class="publisher">
-                            ICLR 2024 <span class="publication-label">Spotlight</span>
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/abs/2310.05898.pdf" style="font-size: 14px">paper</a>
-                        </div>
-                    </div>
-
-                    <div class="paper">
-                        <div class="title">
-                            Asynchronous Local-SGD Training for Language Modeling
-                        </div>
-                        <div class="authors">
-                            <strong>Bo Liu</strong>, Rachita Chhaparia, Arthur Douillard, Satyen Kale, Andrei A. Rusu, Jiajun Shen, Arthur Szlam, Marc'Aurelio Ranzato
-                        </div>
-                        <div class="publisher">
-                            WANT @ ICML 2024 <span class="publication-label">Workshop Oral</span>
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/abs/2401.09135.pdf" style="font-size: 14px">paper</a> /
-                            <a href="https://github.com/google-deepmind/asyncdiloco/tree/main" style="font-size: 14px">code</a>
-                        </div>
-                    </div>
-
-                    <div class="paper">
-                        <div class="title">
-                            Firefly Neural Architecture Descent: A General Approach for Growing Neural Networks
-                        </div>
-                        <div class="authors">
-                            *Lemeng Wu, <strong>*Bo Liu</strong>, Peter Stone, Qiang Liu
-                        </div>
-                        <div class="publisher">
-                            NeurIPS 2020
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/pdf/2102.08574.pdf" style="font-size: 14px">paper</a> /
-                            <a href="https://github.com/klightz/Firefly" style="font-size: 14px">code</a>
-                        </div>
-                    </div>
-
-                    <h3 class="publication-category-title"><span>Continual, Multi-Task &amp; Meta Learning</span></h3>
-
-                    <div class="paper">
-                        <div class="title">
-                            FAMO: Fast Adaptive Multitask Optimization
-                        </div>
-                        <div class="authors">
-                            <strong>Bo Liu</strong>, Yihao Feng, Peter Stone, Qiang Liu
-                        </div>
-                        <div class="publisher">
-                            NeurIPS 2023
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/abs/2306.03792.pdf" style="font-size: 14px">paper</a> /
-                            <a href="https://github.com/Cranial-XIX/FAMO.git" style="font-size: 14px">code</a>
-                        </div>
-                    </div>
-
-                    <div class="paper">
-                        <div class="title">
-                            Conflict-Averse Gradient Descent for Multi-task Learning
-                        </div>
-                        <div class="authors">
-                            <strong>Bo Liu</strong>, Xingchao Liu, Xiaojie Jin, Peter Stone, Qiang Liu
-                        </div>
-                        <div class="publisher">
-                            NeurIPS 2021
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/pdf/2110.14048.pdf" style="font-size: 14px">paper</a> /
-                            <a href="https://github.com/Cranial-XIX/CAGrad" style="font-size: 14px">code</a>
-                        </div>
-                    </div>
-
-                    <div class="paper">
-                        <div class="title">
-                            Continual Learning and Private Unlearning
-                        </div>
-                        <div class="authors">
-                            <strong>Bo Liu</strong>, Qiang Liu, Peter Stone
-                        </div>
-                        <div class="publisher">
-                            CoLLAs 2022
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/pdf/2203.12817.pdf" style="font-size: 14px">paper</a> /
-                            <a href="https://github.com/Cranial-XIX/Continual-Learning-Private-Unlearning" style="font-size: 14px">code</a>
-                        </div>
-                    </div>
-
-                    <div class="paper">
-                        <div class="title">
-                            BOME! Bilevel Optimization Made Easy: A Simple First-Order Approach
-                        </div>
-                        <div class="authors">
-                            <strong>*Bo Liu</strong>, *Mao Ye, Peter Stone, Steve Wright, Qiang Liu
-                        </div>
-                        <div class="publisher">
-                            NeurIPS 2022
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/pdf/2209.08709.pdf" style="font-size: 14px">paper</a> /
-                            <a href="https://github.com/Cranial-XIX/BOME" style="font-size: 14px">code</a>
-                        </div>
-                    </div>
-
-                    <h3 class="publication-category-title"><span>Reinforcement Learning &amp; Decision Making</span></h3>
-
-                    <div class="paper">
-                        <div class="title">
-                            LLM+P: Empowering Large Language Models with Optimal Planning Proficiency
-                        </div>
-                        <div class="authors">
-                            <strong>*Bo Liu</strong>, *Yuqian Jiang, Xiaohan Zhang, Qiang Liu, Shiqi Zhang, Joydeep Biswas, Peter Stone
-                        </div>
-                        <div class="publisher">
-                            Preprint, 2023
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/abs/2304.11477.pdf" style="font-size: 14px">paper</a> /
-                            <a href="https://github.com/Cranial-XIX/llm-pddl.git" style="font-size: 14px">code</a>
-                        </div>
-                    </div>
-
-                    <div class="paper">
-                        <div class="title">
-                            Metric Residual Networks for Sample Efficient Goal-Conditioned Reinforcement Learning
-                        </div>
-                        <div class="authors">
-                            <strong>Bo Liu</strong>, Yihao Feng, Qiang Liu, Peter Stone
-                        </div>
-                        <div class="publisher">
-                            AAAI 2023 <span class="publication-label">Oral</span>
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/pdf/2208.08133.pdf" style="font-size: 14px">paper</a> /
-                            <a href="https://github.com/Cranial-XIX/metric-residual-network" style="font-size: 14px">code</a>
-                        </div>
-                    </div>
-
-                    <div class="paper">
-                        <div class="title">
-                            Coach-Player Multi-Agent Reinforcement Learning for Dynamic Team Composition
-                        </div>
-                        <div class="authors">
-                            <strong>Bo Liu</strong>, Qiang Liu, Peter Stone, Animesh Garg, Yuke Zhu, Animashree Anandkumar
-                        </div>
-                        <div class="publisher">
-                            ICML 2021 <span class="publication-label">Oral</span>
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/pdf/2105.08692.pdf" style="font-size: 14px">paper</a> /
-                            <a href="https://github.com/Cranial-XIX/marl-copa" style="font-size: 14px">code</a>
-                        </div>
-                    </div>
-
-                    <h3 class="publication-category-title"><span>Robotics &amp; Embodied Learning</span></h3>
-
-                    <div class="paper">
-                        <div class="title">
-                            LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning
-                        </div>
-                        <div class="authors">
-                            <strong>*Bo Liu</strong>, *Yifeng Zhu, *Chongkai Gao, Yihao Feng, Qiang Liu, Yuke Zhu, Peter Stone
-                        </div>
-                        <div class="publisher">
-                            NeurIPS 2023; RAP4Robots @ ICRA 2023 and TGR @ CoRL 2023 <span class="publication-label">Workshop Oral</span>
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/abs/2306.03310.pdf" style="font-size: 14px">paper</a> /
-                            <a href="https://github.com/Lifelong-Robot-Learning/LIBERO.git" style="font-size: 14px">code</a> /
-                            <a href="https://libero-project.github.io" style="font-size: 14px">website</a>
-                        </div>
-                    </div>
-
-                    <div class="paper">
-                        <div class="title">
-                            Pretrained Vision-Language-Action Models are Surprisingly Resistant to Forgetting in Continual Learning
-                        </div>
-                        <div class="authors">
-                            Huihan Liu, Changyeon Kim, <strong>Bo Liu</strong>, Minghuan Liu, Yuke Zhu
-                        </div>
-                        <div class="publisher">
-                            ICML 2026 <span class="publication-label">Oral</span>
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/abs/2603.03818" style="font-size: 14px">paper</a> /
-                            <a href="https://continual-vlas.github.io/forget-me-not/" style="font-size: 14px">website</a>
-                        </div>
-                    </div>
-
-                    <div class="paper">
-                        <div class="title">
-                            A Lifelong Learning Approach to Mobile Robot Navigation
-                        </div>
-                        <div class="authors">
-                            <strong>*Bo Liu</strong>, *Xuesu Xiao, Peter Stone
-                        </div>
-                        <div class="publisher">
-                            RA-L / ICRA 2021
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/pdf/2007.14486.pdf" style="font-size: 14px">paper</a> /
-                            <a href="https://github.com/Cranial-XIX/LifelongLearningforNavigation" style="font-size: 14px">code</a>
-                        </div>
-                    </div>
-
-                    <h3 class="publication-category-title"><span>Generative Modeling</span></h3>
-
-                    <div class="paper">
-                        <div class="title">
-                            SPG: Sandwiched Policy Gradient for Masked Diffusion Language Models
-                        </div>
-                        <div class="authors">
-                            Chenyu Wang, Paria Rashidinejad, DiJia Su, Song Jiang, Sid Wang, Siyan Zhao, Cai Zhou, Shannon Zejiang Shen, Feiyu Chen, Tommi Jaakkola, Yuandong Tian, <strong>Bo Liu</strong>
-                        </div>
-                        <div class="publisher">
-                            ICLR 2026
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/abs/2510.09541" style="font-size: 14px">paper</a>
-                        </div>
-                    </div>
-
-                    <div class="paper">
-                        <div class="title">
-                            Gumbel Distillation for Parallel Text Generation
-                        </div>
-                        <div class="authors">
-                            *Chi Zhang, *Xixi Hu, <strong>Bo Liu</strong>, Qiang Liu
-                        </div>
-                        <div class="publisher">
-                            ICLR 2026
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/abs/2603.22216" style="font-size: 14px">paper</a> /
-                            <a href="https://github.com/hxixixh/gumbel-distill" style="font-size: 14px">code</a>
-                        </div>
-                    </div>
-
-                    <div class="paper">
-                        <div class="title">
-                            Improving Rectified Flow with Boundary Conditions
-                        </div>
-                        <div class="authors">
-                            *Xixi Hu, *Runlong Liao, Keyang Xu, <strong>Bo Liu</strong>, Yeqing Li, Eugene Ie, Hongliang Fei, Qiang Liu
-                        </div>
-                        <div class="publisher">
-                            ICCV 2025
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/abs/2506.15864" style="font-size: 14px">paper</a>
-                        </div>
-                    </div>
-
-                    <div class="paper">
-                        <div class="title">
-                            AMO Sampler: Enhancing Text Rendering with Overshooting
-                        </div>
-                        <div class="authors">
-                            *Xixi Hu, *Keyang Xu, <strong>Bo Liu</strong>, Qiang Liu, Hongliang Fei
-                        </div>
-                        <div class="publisher">
-                            CVPR 2025
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/abs/2411.19415" style="font-size: 14px">paper</a> /
-                            <a href="https://github.com/hxixixh/amo-release" style="font-size: 14px">code</a> /
-                            <a href="https://hxixixh.github.io/amo-sampler/amo_sampler.html" style="font-size: 14px">website</a>
-                        </div>
-                    </div>
-
-                    <div class="paper">
-                        <div class="title">
-                            AdaFlow: Imitation Learning with Variance-Adaptive Flow-Based Policies
-                        </div>
-                        <div class="authors">
-                            Xixi Hu, <strong>Bo Liu</strong>, Xingchao Liu, Qiang Liu
-                        </div>
-                        <div class="publisher">
-                            NeurIPS 2024
-                        </div>
-                        <div class="resource">
-                            <a href="https://arxiv.org/abs/2402.04292.pdf" style="font-size: 14px">paper</a> /
-                            <a href="https://github.com/hxixixh/AdaFlow.git" style="font-size: 14px">code</a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="experience">
-                    <h2>Teaching</h2>
-                    <table>
-                        <!-- University of Texas at Austin -->
-                        <tr>
-                            <td class="date">Fall 2019</td>
-                            <td class="entry">
-                                <span class="employer">University of Texas at Austin</span> –
-                                <span class="position">Teaching Assistant</span><br>
-                                <span class="position">CS 394: Reinforcement Learning</span>
-                            </td>
-                        </tr>
-
-                        <!-- Stanford University -->
-                        <tr>
-                            <td class="date">Winter 2019</td>
-                            <td class="entry">
-                                <span class="employer">Stanford University</span> –
-                                <span class="position">Teaching Assistant</span><br>
-                                <span class="position">CS 234: Reinforcement Learning</span>
-                            </td>
-                        </tr>
-
-                        <!-- Johns Hopkins University -->
-                        <tr>
-                            <td class="date">Fall 2016</td>
-                            <td class="entry">
-                                <span class="employer">Johns Hopkins University</span> –
-                                <span class="position">Teaching Assistant</span><br>
-                                <span class="position">EN 601.665: Natural Language Processing</span><br>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="date">Fall 2015</td>
-                            <td class="entry">
-                                <span class="employer">Johns Hopkins University</span> –
-                                <span class="position">Teaching Assistant</span><br>
-                                <span class="position">EN 600.463: Algorithms</span>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-
+    <nav class="topnav" aria-label="Sections">
+        <div class="wrap">
+            <a class="brand" href="#top">Bo Liu</a>
+            <div class="navlinks">
+                <a href="#highlights">Highlights</a>
+                <a href="#publications">Publications</a>
+                <a href="#experience">Experience</a>
+                <a href="#teaching">Teaching</a>
             </div>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+                <i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i>
+            </button>
         </div>
-    </div>
+    </nav>
 
-<script defer src="BEACON_LINK" integrity="INTEGRITY_HASH" data-cf-beacon='{"rayId":"RAY_ID","r":1,"version":"VERSION","token":"TOKEN"}' crossorigin="anonymous"></script>
+    <main class="wrap">
+
+        <!-- ===== About ===== -->
+        <header class="hero">
+            <h1>Bo Liu</h1>
+            <p class="tagline">Be a scientist out of interest :)</p>
+
+            <p class="role"><span class="dot" aria-hidden="true"></span>Member of Technical Staff · Recursive Superintelligence</p>
+
+            <div class="hero-body">
+                <div class="bio">
+                    <p>
+                        I work on pretraining and continual learning at Recursive Super&shy;intelligence. My research
+                        interest lies in designing theoretically sound algorithms and neural architectures for agents
+                        with persistent memory and continual improvement. Before Recursive, I worked on post-training
+                        at Microsoft Superintelligence and Meta Superintelligence Lab.
+                    </p>
+                    <p>
+                        I received my Ph.D. from UT Austin, where I was fortunate to be co-advised by
+                        <a href="https://www.cs.utexas.edu/~pstone">Prof. Peter Stone</a> and
+                        <a href="https://www.cs.utexas.edu/~lqiang">Prof. Qiang Liu</a>. Before that, I completed
+                        my master's degree at Stanford and my undergraduate degree at Johns Hopkins.
+                    </p>
+                </div>
+
+                <figure class="hero-photo">
+                    <img src="images/img/profile.jpg" width="480" height="606" alt="Bo Liu next to an Einstein teddy bear, beneath E = mc² written on the wall">
+                </figure>
+            </div>
+
+            <ul class="links">
+                <li><a href="mailto:bliu@cs.utexas.edu"><i class="fa-solid fa-envelope" aria-hidden="true"></i>Email</a></li>
+                <li><a href="https://scholar.google.com/citations?hl=en&amp;user=RlaKKWAAAAAJ" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-scholar" aria-hidden="true"></i>Scholar</a></li>
+                <li><a href="https://github.com/Cranial-XIX" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a></li>
+                <li><a href="https://x.com/cranialxix" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i>X</a></li>
+                <li><a href="https://www.alphaxiv.org/@bo-liu" target="_blank" rel="noopener noreferrer"><img src="https://www.alphaxiv.org/favicon.ico" alt="" width="14" height="14">alphaXiv</a></li>
+            </ul>
+        </header>
+
+        <!-- ===== Highlights ===== -->
+        <section class="section" id="highlights">
+            <div class="section-head">
+                <h2>Highlights</h2>
+            </div>
+
+            <ol class="hl-list">
+                <li class="hl">
+                    <a class="hl-title" href="https://recursive.com/updates/introducing-recursive-flint">Flint</a>
+                    <p class="hl-desc">Recursive's local coding model, outperforming Qwen3.6-35B-A3B on coding and SWE tasks. Core contributor across pretraining, mid-training and post-training.</p>
+                </li>
+                <li class="hl">
+                    <a class="hl-title" href="https://microsoft.ai/news/introducingmai-code-1-flash/">MAI-Code-1-Flash</a>
+                    <p class="hl-desc">Core contributor to post-training: RL and distillation recipes.</p>
+                </li>
+                <li class="hl">
+                    <span class="hl-title">Llama 4 Reasoning</span>
+                    <p class="hl-desc">Core contributor to post-training: large-scale RL runs and recipes, and the initial RL infrastructure for TBD Lab.</p>
+                </li>
+                <li class="hl">
+                    <span class="hl-title">Architectures</span>
+                    <p class="hl-desc">Recurrent architectures for persistent memory. <a href="https://arxiv.org/abs/2407.14207">Longhorn</a> casts state-space models as amortized online learners; <a href="https://arxiv.org/abs/2608.02870">Maglev</a> makes recurrent transformers with memory parallelizable to train.</p>
+                </li>
+                <li class="hl">
+                    <span class="hl-title">Optimization</span>
+                    <p class="hl-desc"><a href="https://arxiv.org/abs/2401.09135">Async Local-SGD</a> at DeepMind, <a href="https://arxiv.org/abs/2404.00438">Distributed Lion</a>, a <a href="https://arxiv.org/abs/2310.05898">Lyapunov view of Lion</a>, and <a href="https://arxiv.org/abs/2411.16085">Cautious Optimizers</a>.</p>
+                </li>
+                <li class="hl">
+                    <a class="hl-title" href="https://libero-project.github.io">LIBERO</a>
+                    <p class="hl-desc">Lifelong robot-learning benchmark; a widely used evaluation suite for VLA models, with 2k+ GitHub stars.</p>
+                </li>
+                <li class="hl">
+                    <a class="hl-title" href="https://arxiv.org/abs/2304.11477">LLM+P</a>
+                    <p class="hl-desc">The first framework to pair LLMs with classical PDDL planners for correct or optimal long-horizon plans.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- ===== Publications ===== -->
+        <section class="section" id="publications">
+            <div class="section-head">
+                <h2>Selected Publications</h2>
+                <span class="note">* equal contribution</span>
+            </div>
+
+            <div class="filters" role="group" aria-label="Filter publications by topic">
+                <button type="button" data-filter="all" aria-pressed="true">All<span class="count">25</span></button>
+                <button type="button" data-filter="arch" aria-pressed="false">Foundation Models<span class="count">10</span></button>
+                <button type="button" data-filter="continual" aria-pressed="false">Continual Learning<span class="count">4</span></button>
+                <button type="button" data-filter="rl" aria-pressed="false">RL &amp; Planning<span class="count">3</span></button>
+                <button type="button" data-filter="robotics" aria-pressed="false">Robotics<span class="count">3</span></button>
+                <button type="button" data-filter="gen" aria-pressed="false">Generative<span class="count">5</span></button>
+            </div>
+
+            <!-- Foundation Models, Architectures & Optimization -->
+            <div class="pub-group" data-cat="arch">
+                <h3>Foundation Models, Architectures &amp; Optimization</h3>
+                <ul class="pubs">
+                    <li class="pub featured">
+                        <a class="pub-title" href="https://arxiv.org/abs/2608.02870">Maglev: Sliding Recurrent Memory</a>
+                        <div class="pub-authors"><span class="me">Bo Liu</span>, Qiang Liu</div>
+                        <div class="pub-meta">
+                            <span class="venue">Preprint 2026</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2608.02870">paper</a></span>
+                        </div>
+                    </li>
+                    <li class="pub featured">
+                        <a class="pub-title" href="https://arxiv.org/abs/2407.14207">Longhorn: State Space Models Are Amortized Online Learners</a>
+                        <div class="pub-authors"><span class="me">Bo Liu</span>, Rui Wang, Lemeng Wu, Yihao Feng, Peter Stone, Qiang Liu</div>
+                        <div class="pub-meta">
+                            <span class="venue">ICLR 2025</span>
+                            <span class="venue-extra">ENLSP @ NeurIPS 2024</span>
+                            <span class="badge">Workshop Oral</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2407.14207">paper</a><a href="https://github.com/Cranial-XIX/longhorn">code</a></span>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2609.34174">GradLev: Token-Parallel Test-Time Training via Costate Prediction</a>
+                        <div class="pub-authors"><span class="me">Bo Liu</span>, Qiang Liu</div>
+                        <div class="pub-meta">
+                            <span class="venue">Preprint 2026</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2609.34174">paper</a></span>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2411.16085">Cautious Optimizers: Improving Training with One Line of Code</a>
+                        <div class="pub-authors">*Kaizhao Liang, *Lizhang Chen, <span class="me">Bo Liu</span>, Qiang Liu</div>
+                        <div class="pub-meta">
+                            <span class="venue">ICLR 2026</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2411.16085">paper</a><a href="https://github.com/kyleliang919/C-Optim">code</a></span>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2502.07488">Improving Adaptive Moment Optimization via Preconditioner Diagonalization</a>
+                        <div class="pub-authors">Son Nguyen, <span class="me">Bo Liu</span>, Lizhang Chen, Qiang Liu</div>
+                        <div class="pub-meta">
+                            <span class="venue">AISTATS 2026</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2502.07488">paper</a></span>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2408.12857">Memory-Efficient LLM Training with Online Subspace Descent</a>
+                        <div class="pub-authors">Kaizhao Liang, <span class="me">Bo Liu</span>, Lizhang Chen, Qiang Liu</div>
+                        <div class="pub-meta">
+                            <span class="venue">NeurIPS 2024</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2408.12857">paper</a><a href="https://github.com/kyleliang919/Online-Subspace-Descent">code</a></span>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2404.00438">Communication Efficient Distributed Training with Distributed Lion</a>
+                        <div class="pub-authors">*<span class="me">Bo Liu</span>, *Lemeng Wu, *Lizhang Chen, Kaizhao Liang, Jiaxu Zhu, Chen Liang, Raghuraman Krishnamoorthi, Qiang Liu</div>
+                        <div class="pub-meta">
+                            <span class="venue">NeurIPS 2024</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2404.00438">paper</a></span>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2310.05898">Lion Secretly Solves Constrained Optimization: As Lyapunov Predicts</a>
+                        <div class="pub-authors">*Lizhang Chen, *<span class="me">Bo Liu</span>, *Kaizhao Liang, Qiang Liu</div>
+                        <div class="pub-meta">
+                            <span class="venue">ICLR 2024</span>
+                            <span class="badge">Spotlight</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2310.05898">paper</a></span>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2401.09135">Asynchronous Local-SGD Training for Language Modeling</a>
+                        <div class="pub-authors"><span class="me">Bo Liu</span>, Rachita Chhaparia, Arthur Douillard, Satyen Kale, Andrei A. Rusu, Jiajun Shen, Arthur Szlam, Marc'Aurelio Ranzato</div>
+                        <div class="pub-meta">
+                            <span class="venue">WANT @ ICML 2024</span>
+                            <span class="badge">Workshop Oral</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2401.09135">paper</a><a href="https://github.com/google-deepmind/asyncdiloco">code</a></span>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2102.08574">Firefly Neural Architecture Descent: A General Approach for Growing Neural Networks</a>
+                        <div class="pub-authors">*Lemeng Wu, *<span class="me">Bo Liu</span>, Peter Stone, Qiang Liu</div>
+                        <div class="pub-meta">
+                            <span class="venue">NeurIPS 2020</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2102.08574">paper</a><a href="https://github.com/klightz/Firefly">code</a></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Continual, Multi-Task & Meta Learning -->
+            <div class="pub-group" data-cat="continual">
+                <h3>Continual, Multi-Task &amp; Meta Learning</h3>
+                <ul class="pubs">
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2306.03792">FAMO: Fast Adaptive Multitask Optimization</a>
+                        <div class="pub-authors"><span class="me">Bo Liu</span>, Yihao Feng, Peter Stone, Qiang Liu</div>
+                        <div class="pub-meta">
+                            <span class="venue">NeurIPS 2023</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2306.03792">paper</a><a href="https://github.com/Cranial-XIX/FAMO">code</a></span>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2110.14048">Conflict-Averse Gradient Descent for Multi-Task Learning</a>
+                        <div class="pub-authors"><span class="me">Bo Liu</span>, Xingchao Liu, Xiaojie Jin, Peter Stone, Qiang Liu</div>
+                        <div class="pub-meta">
+                            <span class="venue">NeurIPS 2021</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2110.14048">paper</a><a href="https://github.com/Cranial-XIX/CAGrad">code</a></span>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2203.12817">Continual Learning and Private Unlearning</a>
+                        <div class="pub-authors"><span class="me">Bo Liu</span>, Qiang Liu, Peter Stone</div>
+                        <div class="pub-meta">
+                            <span class="venue">CoLLAs 2022</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2203.12817">paper</a><a href="https://github.com/Cranial-XIX/Continual-Learning-Private-Unlearning">code</a></span>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2209.08709">BOME! Bilevel Optimization Made Easy: A Simple First-Order Approach</a>
+                        <div class="pub-authors">*<span class="me">Bo Liu</span>, *Mao Ye, Peter Stone, Stephen Wright, Qiang Liu</div>
+                        <div class="pub-meta">
+                            <span class="venue">NeurIPS 2022</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2209.08709">paper</a><a href="https://github.com/Cranial-XIX/BOME">code</a></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Reinforcement Learning & Decision Making -->
+            <div class="pub-group" data-cat="rl">
+                <h3>Reinforcement Learning &amp; Decision Making</h3>
+                <ul class="pubs">
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2304.11477">LLM+P: Empowering Large Language Models with Optimal Planning Proficiency</a>
+                        <div class="pub-authors">*<span class="me">Bo Liu</span>, *Yuqian Jiang, Xiaohan Zhang, Qiang Liu, Shiqi Zhang, Joydeep Biswas, Peter Stone</div>
+                        <div class="pub-meta">
+                            <span class="venue">Preprint 2023</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2304.11477">paper</a><a href="https://github.com/Cranial-XIX/llm-pddl">code</a></span>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2208.08133">Metric Residual Networks for Sample Efficient Goal-Conditioned Reinforcement Learning</a>
+                        <div class="pub-authors"><span class="me">Bo Liu</span>, Yihao Feng, Qiang Liu, Peter Stone</div>
+                        <div class="pub-meta">
+                            <span class="venue">AAAI 2023</span>
+                            <span class="badge">Oral</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2208.08133">paper</a><a href="https://github.com/Cranial-XIX/metric-residual-network">code</a></span>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2105.08692">Coach-Player Multi-Agent Reinforcement Learning for Dynamic Team Composition</a>
+                        <div class="pub-authors"><span class="me">Bo Liu</span>, Qiang Liu, Peter Stone, Animesh Garg, Yuke Zhu, Animashree Anandkumar</div>
+                        <div class="pub-meta">
+                            <span class="venue">ICML 2021</span>
+                            <span class="badge">Oral</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2105.08692">paper</a><a href="https://github.com/Cranial-XIX/marl-copa">code</a></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Robotics & Embodied Learning -->
+            <div class="pub-group" data-cat="robotics">
+                <h3>Robotics &amp; Embodied Learning</h3>
+                <ul class="pubs">
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2306.03310">LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning</a>
+                        <div class="pub-authors">*<span class="me">Bo Liu</span>, *Yifeng Zhu, *Chongkai Gao, Yihao Feng, Qiang Liu, Yuke Zhu, Peter Stone</div>
+                        <div class="pub-meta">
+                            <span class="venue">NeurIPS 2023</span>
+                            <span class="venue-extra">RAP4Robots @ ICRA 2023, TGR @ CoRL 2023</span>
+                            <span class="badge">Workshop Oral</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2306.03310">paper</a><a href="https://github.com/Lifelong-Robot-Learning/LIBERO">code</a><a href="https://libero-project.github.io">website</a></span>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2603.03818">Pretrained Vision-Language-Action Models Are Surprisingly Resistant to Forgetting in Continual Learning</a>
+                        <div class="pub-authors">Huihan Liu, Changyeon Kim, <span class="me">Bo Liu</span>, Minghuan Liu, Yuke Zhu</div>
+                        <div class="pub-meta">
+                            <span class="venue">ICML 2026</span>
+                            <span class="badge">Oral</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2603.03818">paper</a><a href="https://continual-vlas.github.io/forget-me-not/">website</a></span>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2007.14486">A Lifelong Learning Approach to Mobile Robot Navigation</a>
+                        <div class="pub-authors">*<span class="me">Bo Liu</span>, *Xuesu Xiao, Peter Stone</div>
+                        <div class="pub-meta">
+                            <span class="venue">RA-L / ICRA 2021</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2007.14486">paper</a><a href="https://github.com/Cranial-XIX/LifelongLearningforNavigation">code</a></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Generative Modeling -->
+            <div class="pub-group" data-cat="gen">
+                <h3>Generative Modeling</h3>
+                <ul class="pubs">
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2510.09541">SPG: Sandwiched Policy Gradient for Masked Diffusion Language Models</a>
+                        <div class="pub-authors">Chenyu Wang, Paria Rashidinejad, DiJia Su, Song Jiang, Sid Wang, Siyan Zhao, Cai Zhou, Shannon Zejiang Shen, Feiyu Chen, Tommi Jaakkola, Yuandong Tian, <span class="me">Bo Liu</span></div>
+                        <div class="pub-meta">
+                            <span class="venue">ICLR 2026</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2510.09541">paper</a></span>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2603.22216">Gumbel Distillation for Parallel Text Generation</a>
+                        <div class="pub-authors">*Chi Zhang, *Xixi Hu, <span class="me">Bo Liu</span>, Qiang Liu</div>
+                        <div class="pub-meta">
+                            <span class="venue">ICLR 2026</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2603.22216">paper</a><a href="https://github.com/hxixixh/gumbel-distill">code</a></span>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2506.15864">Improving Rectified Flow with Boundary Conditions</a>
+                        <div class="pub-authors">*Xixi Hu, *Runlong Liao, Keyang Xu, <span class="me">Bo Liu</span>, Yeqing Li, Eugene Ie, Hongliang Fei, Qiang Liu</div>
+                        <div class="pub-meta">
+                            <span class="venue">ICCV 2025</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2506.15864">paper</a></span>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2411.19415">AMO Sampler: Enhancing Text Rendering with Overshooting</a>
+                        <div class="pub-authors">*Xixi Hu, *Keyang Xu, <span class="me">Bo Liu</span>, Qiang Liu, Hongliang Fei</div>
+                        <div class="pub-meta">
+                            <span class="venue">CVPR 2025</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2411.19415">paper</a><a href="https://github.com/hxixixh/amo-release">code</a><a href="https://hxixixh.github.io/amo-sampler/amo_sampler.html">website</a></span>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <a class="pub-title" href="https://arxiv.org/abs/2402.04292">AdaFlow: Imitation Learning with Variance-Adaptive Flow-Based Policies</a>
+                        <div class="pub-authors">Xixi Hu, <span class="me">Bo Liu</span>, Xingchao Liu, Qiang Liu</div>
+                        <div class="pub-meta">
+                            <span class="venue">NeurIPS 2024</span>
+                            <span class="pub-links"><a href="https://arxiv.org/abs/2402.04292">paper</a><a href="https://github.com/hxixixh/AdaFlow">code</a></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== Experience ===== -->
+        <section class="section" id="experience">
+            <div class="section-head">
+                <h2>Experience</h2>
+            </div>
+
+            <ol class="entries timeline">
+                <li class="entry current">
+                    <div class="when">Aug 2026 – Present</div>
+                    <div class="what">
+                        <div><span class="org">Recursive Superintelligence</span></div>
+                        <div class="position">Member of Technical Staff</div>
+                        <p class="desc">Core contributor to Flint across pretraining, mid-training and post-training; architecture and optimization research.</p>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div class="when">Nov 2025 – Aug 2026</div>
+                    <div class="what">
+                        <div><span class="org">Microsoft <span class="place">· Mountain View</span></span></div>
+                        <div class="position">Member of Technical Staff, Superintelligence (MSI)</div>
+                        <p class="desc">MAI-Code-1-Flash post-training: RL and distillation recipes; research on RL and continual learning.</p>
+                        <p class="people">Manager: Weizhu Chen</p>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div class="when">Nov 2024 – Nov 2025</div>
+                    <div class="what">
+                        <div><span class="org">Meta <span class="place">· Menlo Park</span></span></div>
+                        <div class="position">Senior Research Scientist, Superintelligence Labs (MSL)</div>
+                        <p class="desc">Llama 4 reasoning post-training: large-scale RL runs, data cleaning and recipe design; diagnosed failures across pretraining, post-training and RL infrastructure.</p>
+                        <p class="people">Manager: Yuandong Tian</p>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div class="when">Jun – Oct 2023</div>
+                    <div class="what">
+                        <div><span class="org">DeepMind <span class="place">· London</span></span></div>
+                        <div class="position">Research Scientist Intern</div>
+                        <p class="desc">Asynchronous Local-SGD / DiLoCo for language-model training (WANT @ ICML 2024 Oral).</p>
+                        <p class="people">Mentors: Arthur Szlam, Marc'Aurelio Ranzato</p>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div class="when">Jun – Sep 2020</div>
+                    <div class="what">
+                        <div><span class="org">Nvidia <span class="place">· Sunnyvale</span></span></div>
+                        <div class="position">Research Scientist Intern</div>
+                        <p class="desc">Multi-agent RL for teams with changing composition (ICML 2021 Oral).</p>
+                        <p class="people">Mentors: Animashree Anandkumar, Yuke Zhu</p>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div class="when">Summers 2018, 2019</div>
+                    <div class="what">
+                        <div><span class="org">Baidu <span class="place">· Sunnyvale</span></span></div>
+                        <div class="position">Research Scientist Intern</div>
+                        <p class="desc">Multithreaded C++/CUDA components for an internal adaptive-base-class boosting library.</p>
+                        <p class="people">Mentor: Ping Li</p>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div class="when">Summers 2015, 2016</div>
+                    <div class="what">
+                        <div><span class="org">Google <span class="place">· Los Angeles</span></span></div>
+                        <div class="position">Software Engineering Intern</div>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <!-- ===== Teaching ===== -->
+        <section class="section" id="teaching">
+            <div class="section-head">
+                <h2>Teaching</h2>
+                <span class="note">Teaching Assistant</span>
+            </div>
+
+            <ol class="entries compact">
+                <li class="entry">
+                    <div class="when">Fall 2019</div>
+                    <div class="what">
+                        <div class="org">CS 394R: Reinforcement Learning</div>
+                        <p class="desc">The University of Texas at Austin</p>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div class="when">Winter 2019</div>
+                    <div class="what">
+                        <div class="org">CS 234: Reinforcement Learning</div>
+                        <p class="desc">Stanford University</p>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div class="when">Fall 2016</div>
+                    <div class="what">
+                        <div class="org">EN.601.465/665: Natural Language Processing</div>
+                        <p class="desc">Johns Hopkins University</p>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div class="when">Fall 2015</div>
+                    <div class="what">
+                        <div class="org">EN.600.463: Algorithms</div>
+                        <p class="desc">Johns Hopkins University</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <footer class="footer">
+            <span>© 2026 Bo Liu</span>
+            <span>Last updated October 2026</span>
+        </footer>
+
+    </main>
+
+    <script>
+        (function () {
+            var root = document.documentElement;
+            var nav = document.querySelector(".topnav");
+
+            // ---- theme toggle ----
+            var media = window.matchMedia("(prefers-color-scheme: dark)");
+            function effectiveTheme() {
+                return root.getAttribute("data-theme") || (media.matches ? "dark" : "light");
+            }
+            function syncThemeColor() {
+                var meta = document.querySelectorAll('meta[name="theme-color"]');
+                var color = effectiveTheme() === "dark" ? "#131312" : "#fbfaf7";
+                for (var i = 0; i < meta.length; i++) meta[i].setAttribute("content", color);
+            }
+            document.getElementById("theme-toggle").addEventListener("click", function () {
+                var next = effectiveTheme() === "dark" ? "light" : "dark";
+                root.setAttribute("data-theme", next);
+                try { localStorage.setItem("theme", next); } catch (e) {}
+                syncThemeColor();
+            });
+            syncThemeColor();
+
+            // ---- nav border + brand once the name scrolls away ----
+            var title = document.querySelector(".hero h1");
+            if ("IntersectionObserver" in window) {
+                new IntersectionObserver(function (entries) {
+                    nav.classList.toggle("is-scrolled", !entries[0].isIntersecting);
+                }, { rootMargin: "-56px 0px 0px 0px" }).observe(title);
+            }
+
+            // ---- highlight the section currently in view ----
+            var links = document.querySelectorAll(".navlinks a");
+            var byId = {};
+            for (var i = 0; i < links.length; i++) byId[links[i].getAttribute("href").slice(1)] = links[i];
+            var strip = document.querySelector(".navlinks");
+            function setActive(id) {
+                for (var k in byId) byId[k].classList.toggle("is-active", k === id);
+                // on narrow screens the nav scrolls sideways; keep the active link in view
+                var a = byId[id];
+                if (a && strip.scrollWidth > strip.clientWidth) {
+                    strip.scrollTo({ left: a.offsetLeft - 8, behavior: "smooth" });
+                }
+            }
+            if ("IntersectionObserver" in window) {
+                var spy = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (e) {
+                        if (e.isIntersecting) setActive(e.target.id);
+                    });
+                }, { rootMargin: "-45% 0px -50% 0px" });
+                document.querySelectorAll("main section[id]").forEach(function (s) { spy.observe(s); });
+            }
+            // the last section is too short to reach mid-screen, so claim it at the bottom
+            window.addEventListener("scroll", function () {
+                if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) setActive("teaching");
+            }, { passive: true });
+
+            // ---- publication filters ----
+            var buttons = document.querySelectorAll(".filters button");
+            var groups = document.querySelectorAll(".pub-group");
+            buttons.forEach(function (btn) {
+                btn.addEventListener("click", function () {
+                    var f = btn.getAttribute("data-filter");
+                    buttons.forEach(function (b) { b.setAttribute("aria-pressed", b === btn ? "true" : "false"); });
+                    groups.forEach(function (g) { g.hidden = f !== "all" && g.getAttribute("data-cat") !== f; });
+                });
+            });
+        })();
+    </script>
 </body>
 
 </html>
