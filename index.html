@@ -38,9 +38,8 @@
         <div class="wrap">
             <a class="brand" href="#top">Bo Liu</a>
             <div class="navlinks">
-                <a href="#highlights">Highlights</a>
-                <a href="#publications">Publications</a>
                 <a href="#experience">Experience</a>
+                <a href="#publications">Publications</a>
                 <a href="#teaching">Teaching</a>
             </div>
             <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
@@ -80,7 +79,7 @@
             </div>
 
             <ul class="links">
-                <li><a href="mailto:bliu@cs.utexas.edu"><i class="fa-solid fa-envelope" aria-hidden="true"></i>Email</a></li>
+                <li><a href="mailto:bliu0201@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i>Email</a></li>
                 <li><a href="https://scholar.google.com/citations?hl=en&amp;user=RlaKKWAAAAAJ" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-scholar" aria-hidden="true"></i>Scholar</a></li>
                 <li><a href="https://github.com/Cranial-XIX" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a></li>
                 <li><a href="https://x.com/cranialxix" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i>X</a></li>
@@ -88,40 +87,65 @@
             </ul>
         </header>
 
-        <!-- ===== Highlights ===== -->
-        <section class="section" id="highlights">
+        <!-- ===== Experience ===== -->
+        <section class="section" id="experience">
             <div class="section-head">
-                <h2>Highlights</h2>
+                <h2>Experience</h2>
             </div>
 
-            <ol class="hl-list">
-                <li class="hl">
-                    <a class="hl-title" href="https://recursive.com/updates/introducing-recursive-flint">Flint</a>
-                    <p class="hl-desc">Recursive's local coding model, outperforming Qwen3.6-35B-A3B on coding and SWE tasks. Core contributor across pretraining, mid-training and post-training.</p>
+            <ol class="entries timeline">
+                <li class="entry current">
+                    <div class="when">Aug 2026 – Present</div>
+                    <div class="what">
+                        <div><span class="org">Recursive Superintelligence</span></div>
+                        <div class="position">Member of Technical Staff</div>
+                        <p class="desc">Core contributor to <a href="https://recursive.com/updates/introducing-recursive-flint">Flint</a> across pretraining, mid-training and post-training; architecture and optimization research.</p>
+                    </div>
                 </li>
-                <li class="hl">
-                    <a class="hl-title" href="https://microsoft.ai/news/introducingmai-code-1-flash/">MAI-Code-1-Flash</a>
-                    <p class="hl-desc">Core contributor to post-training: RL and distillation recipes.</p>
+                <li class="entry">
+                    <div class="when">Nov 2025 – Aug 2026</div>
+                    <div class="what">
+                        <div><span class="org">Microsoft <span class="place">· Mountain View</span></span></div>
+                        <div class="position">Member of Technical Staff, Superintelligence (MSI)</div>
+                        <p class="desc"><a href="https://microsoft.ai/news/introducingmai-code-1-flash/">MAI-Code-1-Flash</a> post-training: RL and distillation recipes; research on RL and continual learning.</p>
+                        <p class="people">Manager: Weizhu Chen</p>
+                    </div>
                 </li>
-                <li class="hl">
-                    <span class="hl-title">Llama 4 Reasoning</span>
-                    <p class="hl-desc">Core contributor to post-training: large-scale RL runs and recipes, and the initial RL infrastructure for TBD Lab.</p>
+                <li class="entry">
+                    <div class="when">Nov 2024 – Nov 2025</div>
+                    <div class="what">
+                        <div><span class="org">Meta <span class="place">· Menlo Park</span></span></div>
+                        <div class="position">Senior Research Scientist, Superintelligence Labs (MSL)</div>
+                        <p class="desc">Llama 4 reasoning post-training: large-scale RL runs, data cleaning and recipe design; diagnosed failures across pretraining, post-training and RL infrastructure.</p>
+                        <p class="people">Manager: Yuandong Tian</p>
+                    </div>
                 </li>
-                <li class="hl">
-                    <span class="hl-title">Architectures</span>
-                    <p class="hl-desc">Recurrent architectures for persistent memory. <a href="https://arxiv.org/abs/2407.14207">Longhorn</a> casts state-space models as amortized online learners; <a href="https://arxiv.org/abs/2608.02870">Maglev</a> makes recurrent transformers with memory parallelizable to train.</p>
+                <li class="entry">
+                    <div class="when">Jun – Oct 2023</div>
+                    <div class="what">
+                        <div><span class="org">DeepMind <span class="place">· London</span></span></div>
+                        <div class="position">Research Scientist Intern</div>
+                        <p class="desc">Asynchronous Local-SGD / DiLoCo for language-model training (WANT @ ICML 2024 Oral).</p>
+                        <p class="people">Mentors: Arthur Szlam, Marc'Aurelio Ranzato</p>
+                    </div>
                 </li>
-                <li class="hl">
-                    <span class="hl-title">Optimization</span>
-                    <p class="hl-desc"><a href="https://arxiv.org/abs/2401.09135">Async Local-SGD</a> at DeepMind, <a href="https://arxiv.org/abs/2404.00438">Distributed Lion</a>, a <a href="https://arxiv.org/abs/2310.05898">Lyapunov view of Lion</a>, and <a href="https://arxiv.org/abs/2411.16085">Cautious Optimizers</a>.</p>
+                <li class="entry">
+                    <div class="when">Jun – Sep 2020</div>
+                    <div class="what">
+                        <div><span class="org">Nvidia <span class="place">· Sunnyvale</span></span></div>
+                        <div class="position">Research Scientist Intern</div>
+                        <p class="desc">Multi-agent RL for teams with changing composition (ICML 2021 Oral).</p>
+                        <p class="people">Mentors: Animashree Anandkumar, Yuke Zhu</p>
+                    </div>
                 </li>
-                <li class="hl">
-                    <a class="hl-title" href="https://github.com/Lifelong-Robot-Learning/LIBERO">LIBERO</a>
-                    <p class="hl-desc">Lifelong robot-learning benchmark; a widely used evaluation suite for VLA models, with 2.5k+ GitHub stars.</p>
-                </li>
-                <li class="hl">
-                    <a class="hl-title" href="https://arxiv.org/abs/2304.11477">LLM+P</a>
-                    <p class="hl-desc">The first framework to pair LLMs with classical PDDL planners for correct or optimal long-horizon plans.</p>
+                <li class="entry">
+                    <div class="when">Summers 2018, 2019</div>
+                    <div class="what">
+                        <div><span class="org">Baidu <span class="place">· Sunnyvale</span></span></div>
+                        <div class="position">Research Scientist Intern</div>
+                        <p class="desc">Multithreaded C++/CUDA components for an internal adaptive-base-class boosting library.</p>
+                        <p class="people">Mentor: Ping Li</p>
+                    </div>
                 </li>
             </ol>
         </section>
@@ -385,76 +409,6 @@
                     </li>
                 </ul>
             </div>
-        </section>
-
-        <!-- ===== Experience ===== -->
-        <section class="section" id="experience">
-            <div class="section-head">
-                <h2>Experience</h2>
-            </div>
-
-            <ol class="entries timeline">
-                <li class="entry current">
-                    <div class="when">Aug 2026 – Present</div>
-                    <div class="what">
-                        <div><span class="org">Recursive Superintelligence</span></div>
-                        <div class="position">Member of Technical Staff</div>
-                        <p class="desc">Core contributor to Flint across pretraining, mid-training and post-training; architecture and optimization research.</p>
-                    </div>
-                </li>
-                <li class="entry">
-                    <div class="when">Nov 2025 – Aug 2026</div>
-                    <div class="what">
-                        <div><span class="org">Microsoft <span class="place">· Mountain View</span></span></div>
-                        <div class="position">Member of Technical Staff, Superintelligence (MSI)</div>
-                        <p class="desc">MAI-Code-1-Flash post-training: RL and distillation recipes; research on RL and continual learning.</p>
-                        <p class="people">Manager: Weizhu Chen</p>
-                    </div>
-                </li>
-                <li class="entry">
-                    <div class="when">Nov 2024 – Nov 2025</div>
-                    <div class="what">
-                        <div><span class="org">Meta <span class="place">· Menlo Park</span></span></div>
-                        <div class="position">Senior Research Scientist, Superintelligence Labs (MSL)</div>
-                        <p class="desc">Llama 4 reasoning post-training: large-scale RL runs, data cleaning and recipe design; diagnosed failures across pretraining, post-training and RL infrastructure.</p>
-                        <p class="people">Manager: Yuandong Tian</p>
-                    </div>
-                </li>
-                <li class="entry">
-                    <div class="when">Jun – Oct 2023</div>
-                    <div class="what">
-                        <div><span class="org">DeepMind <span class="place">· London</span></span></div>
-                        <div class="position">Research Scientist Intern</div>
-                        <p class="desc">Asynchronous Local-SGD / DiLoCo for language-model training (WANT @ ICML 2024 Oral).</p>
-                        <p class="people">Mentors: Arthur Szlam, Marc'Aurelio Ranzato</p>
-                    </div>
-                </li>
-                <li class="entry">
-                    <div class="when">Jun – Sep 2020</div>
-                    <div class="what">
-                        <div><span class="org">Nvidia <span class="place">· Sunnyvale</span></span></div>
-                        <div class="position">Research Scientist Intern</div>
-                        <p class="desc">Multi-agent RL for teams with changing composition (ICML 2021 Oral).</p>
-                        <p class="people">Mentors: Animashree Anandkumar, Yuke Zhu</p>
-                    </div>
-                </li>
-                <li class="entry">
-                    <div class="when">Summers 2018, 2019</div>
-                    <div class="what">
-                        <div><span class="org">Baidu <span class="place">· Sunnyvale</span></span></div>
-                        <div class="position">Research Scientist Intern</div>
-                        <p class="desc">Multithreaded C++/CUDA components for an internal adaptive-base-class boosting library.</p>
-                        <p class="people">Mentor: Ping Li</p>
-                    </div>
-                </li>
-                <li class="entry">
-                    <div class="when">Summers 2015, 2016</div>
-                    <div class="what">
-                        <div><span class="org">Google <span class="place">· Los Angeles</span></span></div>
-                        <div class="position">Software Engineering Intern</div>
-                    </div>
-                </li>
-            </ol>
         </section>
 
         <!-- ===== Teaching ===== -->

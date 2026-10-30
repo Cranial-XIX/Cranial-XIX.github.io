@@ -267,7 +267,6 @@ img {
 }
 
 .bio p,
-.hl-desc,
 .entry .desc {
   text-align: justify;
   hyphens: auto;
@@ -383,68 +382,6 @@ img {
   font-size: 12.5px;
   color: var(--faint);
   white-space: nowrap;
-}
-
-/* ---------- Highlights ---------- */
-
-.hl-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.hl {
-  display: grid;
-  grid-template-columns: 11rem minmax(0, 1fr);
-  gap: 24px;
-  align-items: center;
-  padding: 13px 0;
-  border-top: 1px solid var(--line-soft);
-}
-
-.hl:first-child {
-  padding-top: 0;
-  border-top: 0;
-}
-
-.hl-title {
-  display: block;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.35;
-  color: var(--text);
-}
-
-a.hl-title::after {
-  content: "↗";
-  margin-left: 4px;
-  font-size: 0.65em;
-  color: var(--faint);
-  vertical-align: 0.3em;
-}
-
-a.hl-title:hover,
-a.hl-title:hover::after {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-.hl-desc {
-  margin: 0;
-  font-size: 16.5px;
-  line-height: 1.55;
-  color: var(--muted);
-}
-
-.hl-desc a {
-  color: var(--text-2);
-  text-decoration: underline;
-  text-decoration-color: var(--line);
-}
-
-.hl-desc a:hover {
-  color: var(--accent);
-  text-decoration-color: currentColor;
 }
 
 /* ---------- Timeline / entry rows ---------- */
@@ -753,7 +690,6 @@ a.pub-title:hover {
 
   /* phone-width columns are too narrow to justify without wide gaps */
   .bio p,
-  .hl-desc,
   .entry .desc {
     text-align: left;
   }
@@ -778,11 +714,6 @@ a.pub-title:hover {
 
   .hero h1 {
     font-size: 42px;
-  }
-
-  .hl {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 2px;
   }
 
   .section {
